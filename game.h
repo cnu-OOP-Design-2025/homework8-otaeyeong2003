@@ -22,6 +22,7 @@ public:
     int getAttack() const override;
     int getSpeed() const override;
     int getDefense() const override;
+    //virtual ~Knight() {} // 따로 추가
 };
 
 class Wizard : public Character {
@@ -30,6 +31,7 @@ public:
     int getAttack() const override; 
     int getSpeed() const override;
     int getDefense() const override;
+    //virtual ~Wizard() {} // 따로 추가
 };
 
 class Archer : public Character {
@@ -38,6 +40,7 @@ public:
     int getAttack() const override; 
     int getSpeed() const override; 
     int getDefense() const override; 
+    //virtual ~Archer() {} // 따로 추가
 };
 
 class equip_testmentDecorator : public Character {

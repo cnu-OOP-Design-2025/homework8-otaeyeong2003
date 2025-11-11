@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void equip_test1(Character *c1){
+Character* equip_test1(Character *c1){
     c1 = new Armor(c1);
     c1 = new Boots(c1);
     c1 = new Sword(c1);
@@ -12,22 +12,25 @@ void equip_test1(Character *c1){
             << " | Attack: " << c1->getAttack()
             << " | Speed: " << c1->getSpeed()
             << " | Defense: " << c1->getDefense() << endl;
+    return c1;
 }
-void equip_test2(Character *c1){
+Character* equip_test2(Character *c1){
     c1 = new Armor(c1);
     c1 = new Bow(c1);
     cout << c1->getDescription() 
             << " | Attack: " << c1->getAttack()
             << " | Speed: " << c1->getSpeed()
             << " | Defense: " << c1->getDefense() << endl;
+    return c1;
 }
-void equip_test3(Character *c1){
+Character* equip_test3(Character *c1){
     c1 = new Boots(c1);
     c1 = new Staff(c1);
     cout << c1->getDescription() 
             << " | Attack: " << c1->getAttack()
             << " | Speed: " << c1->getSpeed()
             << " | Defense: " << c1->getDefense() << endl;
+    return c1;
 }
 
 int main() {
